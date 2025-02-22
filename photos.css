@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.music-controls {
+    align-items: center;
+    padding-left: 50px;
+}
+
+.music-controls #button2 {
+    background: #FF4742;
+    border: 1px solid #FF4742;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+  }
+  
+  .music-controls #button2:hover,
+  .music-controls #button2:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #FF4742;
+  }
+  
+  .music-controls #button2:active {
+    opacity: .5;
+  }
+
+.container {
+    width: 1400px;
+    margin: 20px auto;
+    columns: 4;
+    column-gap: 10px;
+}
+
+h1 {
+    font-family: "Pacifico", serif;
+    font-size: 45px;
+}
+
+footer {
+    text-align: center;
+}
+
+body {
+    background-color: #f8f8f8; /* Off-white background */
+    background-image:  
+        repeating-linear-gradient(-10deg, rgba(255, 100, 100, 0.2) 0px, rgba(255, 100, 100, 0.2) 1px, transparent 1px, transparent 20px), 
+        repeating-linear-gradient(90deg, rgba(255, 100, 100, 0.2) 0px, rgba(255, 100, 100, 0.2) 1px, transparent 1px, transparent 20px);
+}
+
+.container .box {
+    width: 100%;
+    margin-bottom: 10px;
+    break-inside: avoid;
+
+}
+
+.container .box img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: calc(100% - 40px);
+        columns: 3;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        columns: 2;
+    }
+}
+
