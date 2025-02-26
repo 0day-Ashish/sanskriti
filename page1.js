@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const heart = document.querySelector('.heart');
 
     heart.addEventListener('click', function(event) {
-        for (let i = 0; i < 20; i++) {
+        for (let i = 0; i < 30; i++) {
             setTimeout(() => {
                 createHeartEmoji(event.clientX, event.clientY);
             }, i * 100); // Stagger the creation of each heart emoji
